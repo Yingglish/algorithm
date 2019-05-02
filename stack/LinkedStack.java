@@ -56,7 +56,7 @@ public class LinkedStack<T> implements Iterable<T> {
 //        }
         head = new Node(t, head);
         count++;
-        System.out.println("push:\t" + t + " data:\t" + head.toString());
+        System.out.println("push:\t" + t + " 栈内元素:\t" + head.toString());
     }
 
     T pop() {
@@ -87,7 +87,7 @@ public class LinkedStack<T> implements Iterable<T> {
             return null;
         }
         T t = head.element;
-        System.out.println("peek:\t" + t + "  data:\t" + head.toString());
+        System.out.println("peek:\t" + t + "  栈内元素:\t" + head.toString());
         return t;
     }
 

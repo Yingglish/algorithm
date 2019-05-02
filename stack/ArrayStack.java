@@ -25,7 +25,7 @@ public class ArrayStack<T> implements Iterable<T> {
             resize(size * 2);
         }
         data[count++] = t;
-        System.out.println("push :" + t + "  data:\t" + Arrays.toString(data));
+        System.out.println("push :" + t + "  栈内元素:\t" + Arrays.toString(data));
         return true;
     }
 
@@ -36,7 +36,7 @@ public class ArrayStack<T> implements Iterable<T> {
         if (count == size / 4 && size / 2 != 0) {
             resize(size / 2);
         }
-        System.out.println("pop :" + t + " data:\t" + Arrays.toString(data));
+        System.out.println("pop :" + t + " 栈内元素:\t" + Arrays.toString(data));
         return t;
     }
 
@@ -54,7 +54,7 @@ public class ArrayStack<T> implements Iterable<T> {
             return null;
         }
         T t = data[count - 1];
-        System.out.println("peek: " + t + "data:\t" + Arrays.toString(data));
+        System.out.println("peak: " + t + "栈内元素:\t" + Arrays.toString(data));
         return t;
     }
 
